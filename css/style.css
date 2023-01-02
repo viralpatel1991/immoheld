@@ -1,0 +1,97 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #767676;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo {
+    background: url(https://tool.immoheld.eu/assets/css/images/logo.png) no-repeat;
+    width: 150px;
+    height: 50px;
+    text-indent: -9999px;
+    background-position: center;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+#search-price,
+#search-size {
+    cursor: pointer;
+    min-width: 100px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #F9D14D;
+    color: #444444 !important;
+    margin: 10px;
+}
+
+#main-card-list,
+#more-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+    max-width: calc((100% / 3) - 100px);
+    min-width: 375px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 15px;
+    height: 75px;
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+    max-height: 47vw;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.name {
+    font-size: 26px;
+    color: #F9D14D;
+}
+
+.price {
+    float: left;
+}
+
+.size {
+    position: relative;
+    float: right;
+}
+
+.sup {
+    font-size: 80%;
+    position: absolute;
+    margin-top: -1ex;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-top: 1px solid #F9D14D;
+}
